@@ -1,0 +1,23 @@
+SW-DEV#show running-config
+Building configuration...
+
+Current configuration : 1359 bytes
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname SW-DEV
+!
+enable secret 5 $1$mERr$vTbHul1N28cEp8lkLqr0f/
+!
+!
+!
+ip ssh version 2
+no ip domain-lookup
+ip domain-name technova.local
+!
+username admin secret 5 $1$mERr$vTbHul1N28cEp8lkLqr0f/
+!
+!
